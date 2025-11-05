@@ -1,0 +1,139 @@
+                                                 Obtaining Consent for Research	      Template v.  02/16/2023
+
+The consent form assists the process of ensuring potential research subjects are informed.  The dialogue between researchers and potential subjects is as important as the form.  From an ethical and regulatory standpoint, obtaining informed consent is an important part of subject enrollment.  
+
+Informed consent form general requirements:
+	•	informed consent must give prospective subjects the information that a reasonable person would want to have in order to make an informed decision
+	•	information must be presented in a way that facilitates an understanding of why one might, or might not, want to participate
+	•	the informed consent form should not simply list isolated facts, but instead should help people process complicated information
+	•	key information such as the study's purpose, risks, benefits, and alternatives, must be provided at the beginning of the consent form.
+
+The consent form should be written at an eighth grade level using non-technical terms.  Readability formulas such as the program available as part of Microsoft Word may be helpful.  Avoid dense paragraphs using lengthy sentences.  Use 'bullets' and tables to clearly explain topics such as study visits and procedures.
+
+General Instructions:
+Instructions for use of the template are highlighted in yellow for easier removal from the finished document.  Suggested or sample wording is provided after certain instructions.  Edit, delete, or revise the information to be specific to your project.  Delete the instructions as you develop the form for your study. 
+
+The questions in bolded font should be kept as part of the consent form.
+
+Use 12 point font as is used in this template.
+
+Questions?  Contact the CPHS Office staff at CPHS@Dartmouth.edu.
+
+CONSENT TO TAKE PART IN RESEARCH
+Template v. 02/16/2023
+Dartmouth College 
+
+Study title: On-Task Objective method of cognitive load assessment   
+Principal Investigator: Tam Vu
+
+You are being asked to take part in a research study.  Taking part in research is voluntary.  
+
+Study Summary:
+
+We are asking you to take part in a study about tracking change in focus levels in real time. We want to test whether an EEG headband can assess the change in focus levels of the participants with high levels of accuracy. 
+	•	Purpose: We are testing whether a wearable headband called the FRENZ brainband can measure cognitive load(how mentally demanding a task feels) in real time while people are doing common tasks (e.g., short games, puzzles, reading).
+	•	What you’ll do (single visit, about 90–100 minutes):
+	•	Wear the FRENZ headband (it records brain, heart, and head position signals).
+	•	Do short activities (some easy, some harder), answer quick questions about your focus, and complete short questionnaires about workload.
+	•	Risks: Minimal. Mild skin/pressure discomfort from the headband, possible boredom or frustration during tasks.
+	•	Benefits: You may gain some insight into how focus levels can change with work. This study could help create better tools to monitor attention and workload in schools, work, and training.
+	•	Alternatives: You can choose not to take part.
+	•	Voluntary: Your choice to join or not will not affect your grades, job prospects, or medical care. 
+Your decision will not affect your grades, job, medical care, or relationship with Dartmouth. Please ask any questions you have.
+What is the purpose of this study?
+We want to find out if the FRENZ brainband can accurately measure cognitive load and focus while people are working on tasks. We will compare the device’s focus score with your answers to short questionnaires and your task performance.
+
+Will you benefit from taking part in this study?
+You might not personally benefit from being in this study. We hope to gather information that may help people in the future (for example, students and trainees who need to manage attention and mental workload).
+
+What does this study involve? If you take part in this study, what activities will be done only for research purposes?
+Your participation lasts one visit of about 90–100 minutes. You will:
+	•	Wear the FRENZ brainband while seated at a computer.
+	•	Baseline: Sit quietly with eyes open and then closed for short periods.
+	•	On-task activities: Play brief memory/logic/maths games, relax with breathing/meditation, and experience short planned interruptions (for example, a fake error message) that may change your focus.
+	•	Questionnaires: After activities, complete short ratings about how mentally demanding the tasks felt:
+	•	NASA-TLX (6 quick items about how difficult the task was)
+	•	Subjective Mental Effort Questionnaire (SMEQ) (1 quick item about how difficult the task was)
+	•	Quick focus ratings: You’ll rate your focus before/after interruptions on a 1–10 scale.
+Experimental procedures: Wearing the brainband and all task/questionnaire procedures are for research purposes.
+What are the options if you do not want to take part in this study?
+The alternative is not to take part. There are no penalties for saying no, and you can change your mind at any time.
+
+What are the risks involved with being enrolled in this study? 
+	•	Headband discomfort/skin irritation: The band may feel snug. We will adjust or pause as needed. You can stop at any time.
+	•	Fatigue, frustration or boredom: From harder tasks. Breaks are built in; you can request more. Easier tasks might feel boring.
+If you feel unwell or uncomfortable, tell the research team. We will stop the activity right away.
+Will my data be deidentified and used in the future for other purposes?
+Yes. Your data ( wearable EEG data, questionnaire, activities outcome, survey data) will be stripped of identifiers and used for future research.Any future research that uses your data will be reviewed by the Committee for the Protection of Human Subjects at Dartmouth College, who will determine if the research requires your permission or may be properly done without further permission from you. 
+
+Other important items you should know: 
+• Leaving the study:  You may choose to stop taking part in this study at any time. If you decide to stop taking part, it will have no effect on your academic standing.
+• Number of people in this study:  We expect 150 people to enroll in this study here.
+• Funding: There is no outside funding for this research project.
+
+• Product Development: If the results of this research are used to develop a product sold for a profit, you will not share in the profit.  
+
+How will your privacy be protected?
+The information collected as data for this study includes: 
+	•	Signals recorded by the FRENZ brainband (brain activity/EEG, heart/PPG, motion/IMU)
+	•	Task events, reaction times, scores, and your answers to short questionnaires and surveys. 
+	•	Simple demographics (e.g., age range, major) and a short “how prepared/tired do you feel” rating
+How we protect it:
+	•	Your data is labeled with a study ID code (not your name).
+	•	Files are stored on encrypted Dartmouth systems with password protection and limited access to authorized study staff only.
+	•	Any transfer of data outside the lab uses encrypted methods.
+	•	Identifiers (like your name or email), if collected for scheduling, are stored separately from research data.
+	•	Identifiable data will be destroyed when it is no longer needed for scheduling or follow-up.
+	•	We will not send raw data or individual artifacts by email.
+	•	Data will be transferred directly from survey platforms or institutional databases to secure Google Drive folders. All transfers will use Dartmouth IT–recommended methods (e.g., VPN, encryption) to protect data.
+We are careful to protect the identities of the people in this study.  We also keep the information collected for this study secure and confidential.  
+
+
+Who may use or see your health information?
+By signing this form, you allow the research team to use your health information and give it to others involved in the research.  The research team includes the study director plus others working on this study at Dartmouth-Hitchcock Medical Center and elsewhere.  You also permit any health care provider holding health information needed for this study to give copies of your information to the research team.
+
+The information collected for this study may be used by researchers or officials of the following institutions.
+	•	Dartmouth College
+	•	Other institution/s as applicable
+
+In order to conduct this study, researchers need to use your health care information.  This data is called Protected Health Information ("PHI”).  PHI is protected by federal privacy laws (HIPAA).  By signing this consent form, you give your permission to have your PHI collected, used and disclosed for purposes of this study.  There is no intention to disclose your PHI to others outside of the study. There are protections in place to keep your PHI and research data confidential.  However, HIPAA requires notification so you are aware if your PHI is disclosed to others, it may no longer be protected by federal privacy laws.
+
+No publication or public presentation about the research described above will reveal your identity without another authorization from you.
+
+Identifiable data collected for this study will be used for research purposes which are determined to be reasonable and in line with expectations by a review committee.
+
+Once data collected for this research study is no longer identifiable, the data may be used or disclosed for other purposes.
+
+Your permission to use your health information for this study will not end until the study is completed. During this study, you and others who take part in the study may not have access to the study data.  You may ask for study data once the study is over.  You have a right to receive a copy of the information in your medical record at any time.
+
+It is possible for a court or government official to order the release of study data including information about you. 
+
+What if you decide not to give permission to use and share your personal health 
+information?
+If you do not allow use of your health information for this study, you may not take part in this study.
+If you choose to stop taking part in this study, you may cancel permission for the use of your health information.  You should let the researcher know if you want to cancel your permission. The study team will assist you in putting your wishes in writing. Information collected for the study before your permission is cancelled will continue to be used in the research.
+
+ What about the costs of this study? 
+There are no costs to you associated with the study. 
+
+Will you be paid to take part in this study?
+Yes. You will be paid at the end of the study in the form of amazon gift cards. 
+Whom should you call with questions about this study?
+If you have questions about this study or concerns about a research related problem or injury, you can contact  the research director for this study: Tam.N.Vu@dartmouth.edu.  
+
+If you have questions, concerns, complaints, or suggestions about human research at Dartmouth, you may call the Office of the Committee for the Protection of Human Subjects at Dartmouth College (603) 646-6482 during normal business hours.
+
+
+CONSENT  - I have read the above information about the On-Task Objective method of cognitive load assessment  and have been given time to ask questions.  I agree to take part in this study and I will be given a copy of this signed consent form.
+
+SIGNATURE  OPTIONS  
+
+														
+Participant's Signature and Date					PRINTED NAME 
+
+
+															
+Researcher or Designee Signature and Date			PRINTED NAME 
+
+
+

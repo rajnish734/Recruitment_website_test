@@ -1,0 +1,158 @@
+/* HumanX Lab Website Styles */
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-color: #f9fafb;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Testing Disclaimer Banner - Change display: block to display: none to hide after IRB approval */
+.testing-banner {
+  display: block; /* Change to 'none' to hide after IRB approval */
+  background-color: #ff6b6b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.testing-banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testing-banner strong {
+  font-weight: 600;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004a37; /* Dartmouth green */
+  padding: 1rem 2rem;
+  color: white;
+}
+
+header img.logo {
+  height: 45px;
+  width: auto;
+}
+
+nav a {
+  color: white;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav img.dartmouth-logo {
+  height: 67.5px; /* 50% bigger than 45px */
+  width: auto;
+  margin-left: 1.5rem;
+  max-width: 90px; /* Increased proportionally */
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #004a37;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #f2f2f2;
+  color: #444;
+  margin-top: 3rem;
+}
+
+/* Games Grid Styles */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.game-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.game-card h2 {
+  color: #004a37;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.game-content {
+  min-height: 200px;
+}
+
+.game-content.coming-soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  background-color: #f9fafb;
+  border-radius: 6px;
+}
+
+.coming-soon-text {
+  text-align: center;
+}
+
+.coming-soon-text p {
+  font-size: 1.2rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin: 0;
+}
+
+.game-content video {
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .games-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .game-content.coming-soon {
+    min-height: 200px;
+  }
+}
+
