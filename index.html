@@ -68,10 +68,6 @@
 
     <h2 style="margin-top: 3rem;">Games You Will Play</h2>
     <p>During the study, you will participate in various cognitive games designed to measure focus and attention. Explore the games below:</p>
-    <p style="margin-top: 1rem; padding: 1rem; background-color: #e3f2fd; border-left: 4px solid #2196f3; border-radius: 4px;">
-      <strong>📝 Note:</strong> To unlock each game video, you must first answer a simple question about the previous game. Answer the question correctly to proceed to the next game video.
-    </p>
-
     <div class="games-grid">
       <!-- Slot 1: Memory Matrix Game (Always unlocked) -->
       <div class="game-card" data-game="1">
@@ -85,21 +81,10 @@
         </div>
       </div>
 
-      <!-- Slot 2: Raindrop Game (Locked until Memory Matrix question answered) -->
-      <div class="game-card locked" data-game="2">
+      <!-- Slot 2: Raindrop Game -->
+      <div class="game-card" data-game="2">
         <h2>Raindrop Game</h2>
-        <div class="question-section" id="question-1">
-          <p style="font-weight: 600; margin-bottom: 1rem;">Question about Memory Matrix Game:</p>
-          <p style="margin-bottom: 1rem;">In the Memory Matrix game, what do you need to memorize?</p>
-          <div class="question-options">
-            <button class="option-btn" data-answer="wrong">The colors of squares</button>
-            <button class="option-btn" data-answer="correct">The positions of highlighted squares</button>
-            <button class="option-btn" data-answer="wrong">The numbers on the grid</button>
-            <button class="option-btn" data-answer="wrong">The order of squares</button>
-          </div>
-          <p class="question-feedback" style="margin-top: 1rem; font-weight: 600; display: none;"></p>
-        </div>
-        <div class="game-content" style="display: none;">
+        <div class="game-content">
           <video controls width="100%" style="max-width: 600px; border-radius: 8px; margin: 1rem 0;">
             <source src="assets/videos/raindrop-math-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -108,25 +93,10 @@
         </div>
       </div>
 
-      <!-- Slot 3: Sliding Tiles Game (Locked until Raindrop question answered) -->
-      <div class="game-card locked" data-game="3">
+      <!-- Slot 3: Sliding Tiles Game -->
+      <div class="game-card" data-game="3">
         <h2>Sliding Tiles Game</h2>
-        <div class="locked-message" style="padding: 2rem; text-align: center; color: #6b7280;">
-          <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">🔒 Locked</p>
-          <p>Answer the question about the previous game to unlock this video.</p>
-        </div>
-        <div class="question-section" id="question-2" style="display: none;">
-          <p style="font-weight: 600; margin-bottom: 1rem;">Question about Raindrop Game:</p>
-          <p style="margin-bottom: 1rem;">In the Raindrop game, what do you solve?</p>
-          <div class="question-options">
-            <button class="option-btn" data-answer="correct">Math problems</button>
-            <button class="option-btn" data-answer="wrong">Color puzzles</button>
-            <button class="option-btn" data-answer="wrong">Word problems</button>
-            <button class="option-btn" data-answer="wrong">Shape patterns</button>
-          </div>
-          <p class="question-feedback" style="margin-top: 1rem; font-weight: 600; display: none;"></p>
-        </div>
-        <div class="game-content" style="display: none;">
+        <div class="game-content">
           <video controls width="100%" style="max-width: 600px; border-radius: 8px; margin: 1rem 0;">
             <source src="assets/videos/sliding-tiles-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -135,25 +105,10 @@
         </div>
       </div>
 
-      <!-- Slot 4: N-Back Game (Locked until Sliding Tiles question answered) -->
-      <div class="game-card locked" data-game="4">
+      <!-- Slot 4: N-Back Game -->
+      <div class="game-card" data-game="4">
         <h2>N-Back Games (N = 1, 2, 3)</h2>
-        <div class="locked-message" style="padding: 2rem; text-align: center; color: #6b7280;">
-          <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">🔒 Locked</p>
-          <p>Answer the question about the previous game to unlock this video.</p>
-        </div>
-        <div class="question-section" id="question-3" style="display: none;">
-          <p style="font-weight: 600; margin-bottom: 1rem;">Question about Sliding Tiles Game:</p>
-          <p style="margin-bottom: 1rem;">In the Sliding Tiles game, what do you slide?</p>
-          <div class="question-options">
-            <button class="option-btn" data-answer="wrong">The tile with higher answer</button>
-            <button class="option-btn" data-answer="correct">The tile with lower answer</button>
-            <button class="option-btn" data-answer="wrong">Both tiles together</button>
-            <button class="option-btn" data-answer="wrong">The tile on the left</button>
-          </div>
-          <p class="question-feedback" style="margin-top: 1rem; font-weight: 600; display: none;"></p>
-        </div>
-        <div class="game-content" style="display: none;">
+        <div class="game-content">
           <video controls width="100%" style="max-width: 600px; border-radius: 8px; margin: 1rem 0;">
             <source src="assets/videos/n-back-games-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -162,25 +117,10 @@
         </div>
       </div>
 
-      <!-- Slot 5: Color Match Game (Locked until N-Back question answered) -->
-      <div class="game-card locked" data-game="5">
+      <!-- Slot 5: Color Match Game -->
+      <div class="game-card" data-game="5">
         <h2>Color Match Game</h2>
-        <div class="locked-message" style="padding: 2rem; text-align: center; color: #6b7280;">
-          <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">🔒 Locked</p>
-          <p>Answer the question about the previous game to unlock this video.</p>
-        </div>
-        <div class="question-section" id="question-4" style="display: none;">
-          <p style="font-weight: 600; margin-bottom: 1rem;">Question about N-Back Games:</p>
-          <p style="margin-bottom: 1rem;">In N-Back games, what do you match?</p>
-          <div class="question-options">
-            <button class="option-btn" data-answer="wrong">Numbers</button>
-            <button class="option-btn" data-answer="wrong">Colors</button>
-            <button class="option-btn" data-answer="correct">Shapes</button>
-            <button class="option-btn" data-answer="wrong">Words</button>
-          </div>
-          <p class="question-feedback" style="margin-top: 1rem; font-weight: 600; display: none;"></p>
-        </div>
-        <div class="game-content" style="display: none;">
+        <div class="game-content">
           <video controls width="100%" style="max-width: 600px; border-radius: 8px; margin: 1rem 0;">
             <source src="assets/videos/color_match_instruction_video.mp4" type="video/mp4">
             Your browser does not support the video tag.
