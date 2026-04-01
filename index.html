@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Introduction to Real-Time Focus Tracking Project at Dartmouth</title>
+  <title>Introduction to the Real-Time Focus Tracking Project</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -16,26 +16,65 @@
 
   <!-- Header -->
   <header>
-    <img src="assets/images/logo.png" alt="HumanX Lab Logo" class="logo" />
     <nav>
       <a href="index.html">Home</a>
-      <img src="assets/images/dartmouth-logo.png" alt="Dartmouth College Logo" class="dartmouth-logo" />
     </nav>
   </header>
 
   <!-- Main Content -->
   <main>
-    <h1>Introduction to Real-Time Focus Tracking Project at Dartmouth</h1>
+    <h1>Introduction to the Real-Time Focus Tracking Project</h1>
     <p>
       We are recruiting participants for our large scale study on real time focus tracking. The purpose of the study is to track the focus of a participant in real time while they perform a number of activities on an iPad while wearing a wearable EEG device called FRENZ headband. The activities will include various games, academic tasks and relaxation exercises that will require varying cognitive load from the user.
     </p>
+    <p>
+      This is a sample recruitment page for a system I built in a previous research project.
+      The study focused on modulating participants' cognitive load while their EEG data was
+      streamed from a wearable EEG device. I developed the study design and created all
+      activities as a series of interactive games.
+    </p>
+
+    <!-- Instructions for Data Collection Session Section -->
+    <section style="margin-top: 3rem;">
+      <h2>Instructions for Data Collection Session</h2>
+      <p>Please follow these video instructions to prepare for your data collection session.</p>
+      
+      <div class="games-grid">
+        <!-- Subsection 1: Instructions to Wear Brainband -->
+        <div class="game-card">
+          <h2>Instructions to Wear Brainband</h2>
+          <div class="game-content">
+            <video controls width="100%" style="max-width: 600px; border-radius: 8px; margin: 1rem 0;">
+              <source src="assets/videos/FRENZ_brainband_video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p>Follow this video instruction to familiarize yourself with how to wear the FRENZ brainband.</p>
+          </div>
+        </div>
+
+        <!-- Subsection 2: Instructions to start Data Collection Suite -->
+        <div class="game-card">
+          <h2>Instructions to start Data Collection Suite</h2>
+          <div class="game-content">
+            <video controls width="100%" style="max-width: 600px; border-radius: 8px; margin: 1rem 0;">
+              <source src="assets/videos/Instruction_video_Data_Collection_Suite.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p>Learn how to connect the brainband to the iPad and start the data collection process.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <h2 style="margin-top: 3rem;">Games You Will Play</h2>
     <p>During the study, you will participate in various cognitive games designed to measure focus and attention. Explore the games below:</p>
+    <p style="margin-top: 1rem; padding: 1rem; background-color: #e3f2fd; border-left: 4px solid #2196f3; border-radius: 4px;">
+      <strong>📝 Note:</strong> To unlock each game video, you must first answer a simple question about the previous game. Answer the question correctly to proceed to the next game video.
+    </p>
 
     <div class="games-grid">
-      <!-- Slot 1: Memory Matrix Game -->
-      <div class="game-card">
+      <!-- Slot 1: Memory Matrix Game (Always unlocked) -->
+      <div class="game-card" data-game="1">
         <h2>Memory Matrix Game</h2>
         <div class="game-content">
           <video controls width="100%" style="max-width: 600px; border-radius: 8px; margin: 1rem 0;">
@@ -46,10 +85,21 @@
         </div>
       </div>
 
-      <!-- Slot 2: Raindrop Game -->
-      <div class="game-card">
+      <!-- Slot 2: Raindrop Game (Locked until Memory Matrix question answered) -->
+      <div class="game-card locked" data-game="2">
         <h2>Raindrop Game</h2>
-        <div class="game-content">
+        <div class="question-section" id="question-1">
+          <p style="font-weight: 600; margin-bottom: 1rem;">Question about Memory Matrix Game:</p>
+          <p style="margin-bottom: 1rem;">In the Memory Matrix game, what do you need to memorize?</p>
+          <div class="question-options">
+            <button class="option-btn" data-answer="wrong">The colors of squares</button>
+            <button class="option-btn" data-answer="correct">The positions of highlighted squares</button>
+            <button class="option-btn" data-answer="wrong">The numbers on the grid</button>
+            <button class="option-btn" data-answer="wrong">The order of squares</button>
+          </div>
+          <p class="question-feedback" style="margin-top: 1rem; font-weight: 600; display: none;"></p>
+        </div>
+        <div class="game-content" style="display: none;">
           <video controls width="100%" style="max-width: 600px; border-radius: 8px; margin: 1rem 0;">
             <source src="assets/videos/raindrop-math-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -58,10 +108,25 @@
         </div>
       </div>
 
-      <!-- Slot 3: Sliding Tiles Game -->
-      <div class="game-card">
+      <!-- Slot 3: Sliding Tiles Game (Locked until Raindrop question answered) -->
+      <div class="game-card locked" data-game="3">
         <h2>Sliding Tiles Game</h2>
-        <div class="game-content">
+        <div class="locked-message" style="padding: 2rem; text-align: center; color: #6b7280;">
+          <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">🔒 Locked</p>
+          <p>Answer the question about the previous game to unlock this video.</p>
+        </div>
+        <div class="question-section" id="question-2" style="display: none;">
+          <p style="font-weight: 600; margin-bottom: 1rem;">Question about Raindrop Game:</p>
+          <p style="margin-bottom: 1rem;">In the Raindrop game, what do you solve?</p>
+          <div class="question-options">
+            <button class="option-btn" data-answer="correct">Math problems</button>
+            <button class="option-btn" data-answer="wrong">Color puzzles</button>
+            <button class="option-btn" data-answer="wrong">Word problems</button>
+            <button class="option-btn" data-answer="wrong">Shape patterns</button>
+          </div>
+          <p class="question-feedback" style="margin-top: 1rem; font-weight: 600; display: none;"></p>
+        </div>
+        <div class="game-content" style="display: none;">
           <video controls width="100%" style="max-width: 600px; border-radius: 8px; margin: 1rem 0;">
             <source src="assets/videos/sliding-tiles-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -70,15 +135,57 @@
         </div>
       </div>
 
-      <!-- Slot 4: N-Back Game -->
-      <div class="game-card">
+      <!-- Slot 4: N-Back Game (Locked until Sliding Tiles question answered) -->
+      <div class="game-card locked" data-game="4">
         <h2>N-Back Games (N = 1, 2, 3)</h2>
-        <div class="game-content">
+        <div class="locked-message" style="padding: 2rem; text-align: center; color: #6b7280;">
+          <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">🔒 Locked</p>
+          <p>Answer the question about the previous game to unlock this video.</p>
+        </div>
+        <div class="question-section" id="question-3" style="display: none;">
+          <p style="font-weight: 600; margin-bottom: 1rem;">Question about Sliding Tiles Game:</p>
+          <p style="margin-bottom: 1rem;">In the Sliding Tiles game, what do you slide?</p>
+          <div class="question-options">
+            <button class="option-btn" data-answer="wrong">The tile with higher answer</button>
+            <button class="option-btn" data-answer="correct">The tile with lower answer</button>
+            <button class="option-btn" data-answer="wrong">Both tiles together</button>
+            <button class="option-btn" data-answer="wrong">The tile on the left</button>
+          </div>
+          <p class="question-feedback" style="margin-top: 1rem; font-weight: 600; display: none;"></p>
+        </div>
+        <div class="game-content" style="display: none;">
           <video controls width="100%" style="max-width: 600px; border-radius: 8px; margin: 1rem 0;">
             <source src="assets/videos/n-back-games-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
           <p>Challenge your working memory by memorizing shapes and sequences. In N-Back 1, match the current shape with the one from 1 instant ago. In N-Back 2, match with 2 instants ago, and in N-Back 3, match with 3 instants ago.</p>
+        </div>
+      </div>
+
+      <!-- Slot 5: Color Match Game (Locked until N-Back question answered) -->
+      <div class="game-card locked" data-game="5">
+        <h2>Color Match Game</h2>
+        <div class="locked-message" style="padding: 2rem; text-align: center; color: #6b7280;">
+          <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">🔒 Locked</p>
+          <p>Answer the question about the previous game to unlock this video.</p>
+        </div>
+        <div class="question-section" id="question-4" style="display: none;">
+          <p style="font-weight: 600; margin-bottom: 1rem;">Question about N-Back Games:</p>
+          <p style="margin-bottom: 1rem;">In N-Back games, what do you match?</p>
+          <div class="question-options">
+            <button class="option-btn" data-answer="wrong">Numbers</button>
+            <button class="option-btn" data-answer="wrong">Colors</button>
+            <button class="option-btn" data-answer="correct">Shapes</button>
+            <button class="option-btn" data-answer="wrong">Words</button>
+          </div>
+          <p class="question-feedback" style="margin-top: 1rem; font-weight: 600; display: none;"></p>
+        </div>
+        <div class="game-content" style="display: none;">
+          <video controls width="100%" style="max-width: 600px; border-radius: 8px; margin: 1rem 0;">
+            <source src="assets/videos/color_match_instruction_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>Two tiles appear side by side with color names. Press YES if the color name in the left tile matches the color of the letters on the right tile, otherwise press NO. The game gets faster as you advance with levels.</p>
         </div>
       </div>
     </div>
@@ -91,7 +198,7 @@
     <section style="margin-top: 3rem; padding: 2rem; background-color: #f9fafb; border-radius: 8px; border: 1px solid #e5e7eb;">
       <h2>Study Information & Consent</h2>
       <p>
-        Before participating in this study, please review the study information and consent form. This study (Dartmouth CPHS IRB#: <strong>IRB_NUMBER</strong>) has been approved by the Dartmouth Committee for the Protection of Human Subjects.
+        Before participating in this study, please review the study information and consent form. This study (IRB #: YOUR_IRB_NUMBER) has been approved by the appropriate ethics review board.
       </p>
       <p>
         Participation is voluntary, and you may withdraw at any time without penalty. All data collected will be stored securely and used only for research purposes.
@@ -100,7 +207,7 @@
         <strong>Conflict of Interest Disclosure:</strong> Dr. Vu, the PI of this study, has an ownership interest in Earable Neuroscience, the company that developed the devices that are being used in this study. This disclosure is made so that you can decide if this information will affect your willingness to participate in this study.
       </p>
       <p style="margin-top: 1.5rem;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSewBMfyYP6KuQNBUAlgAdCt6J1WUen3USEYf2-VDHsoxPAzgw/viewform" target="_blank" class="button" style="background-color: #004a37; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: 500;">
+        <a href="https://docs.google.com/forms/d/e/YOUR_CONSENT_FORM_ID/viewform" target="_blank" class="button" style="background-color: #004a37; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: 500;">
           Review Consent Form
         </a>
       </p>
@@ -113,7 +220,7 @@
         If you have reviewed the study information and consent form and would like to participate in this study, please complete the registration form below.
       </p>
       <p style="margin-top: 1.5rem;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfp39HeL5pY1PmhJiB7H_8gndAAyOwTOdV1dvGnaflhz4BvLA/viewform" target="_blank" class="button" style="background-color: #004a37; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: 500;">
+        <a href="https://docs.google.com/forms/d/e/YOUR_REGISTRATION_FORM_ID/viewform" target="_blank" class="button" style="background-color: #004a37; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: 500;">
           Register for the Study
         </a>
       </p>
@@ -122,7 +229,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Dartmouth HumanX Lab | Sudikoff, Hanover, NH 03755</p>
+    <p>© 2025 Focus Tracking Study Team | Your Location</p>
   </footer>
 
   <script src="scripts/main.js"></script>

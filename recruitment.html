@@ -195,9 +195,6 @@
   <!-- Header -->
 
   <header>
-
-    <img src="assets/images/logo.png" alt="HumanX Lab Logo" class="logo" />
-
     <nav>
       <a href="index.html">Home</a>
     </nav>
@@ -213,13 +210,15 @@
     <h1>Participate in Our Study</h1>
 
     <p>
-
-      The HumanX Lab at Dartmouth College is conducting a research study on 
-
-      cognitive performance, wearable technologies, and focus improvement.  
-
-      If you are interested in participating, please review the study details below.
-
+      We are conducting a research study on cognitive performance, wearable technologies,
+      and focus improvement. If you are interested in participating, please review the
+      study details below.
+    </p>
+    <p>
+      This is a sample recruitment page for a system I built in a previous research project.
+      The study focused on modulating participants' cognitive load while their EEG data was
+      streamed from a wearable EEG device. I developed the study design and created all
+      activities as a series of interactive games.
     </p>
 
 
@@ -236,7 +235,7 @@
 
       height="315"
 
-      src="https://www.youtube.com/embed/VIDEO_LINK"
+      src="https://www.youtube.com/embed/YOUR_OVERVIEW_VIDEO_ID"
 
       title="Study Overview Video"
 
@@ -260,7 +259,7 @@
 
       <p>
 
-        This study (Dartmouth CPHS IRB#: <strong>IRB_NUMBER</strong>) aims to understand 
+        This study (IRB #: <strong>YOUR_IRB_NUMBER</strong>) aims to understand
 
         focus and cognitive performance using wearable devices and iPad-based tasks.  
 
@@ -278,9 +277,8 @@
 
       <p>
 
-        For questions about the study, contact us at 
-
-        <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a>.
+        For questions about the study, contact us at
+        <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>.
 
       </p>
 
@@ -306,7 +304,7 @@
 
     <iframe 
 
-      src="https://docs.google.com/forms/d/e/GOOGLE_FORM_LINK/viewform?embedded=true"
+      src="https://docs.google.com/forms/d/e/YOUR_REGISTRATION_FORM_ID/viewform?embedded=true"
 
       width="100%" height="900"
 
@@ -316,6 +314,44 @@
 
     </iframe>
 
+    <!-- QR Code -->
+    <h2>Register via QR Code</h2>
+    <p>Scan this QR code to open the registration page on your phone.</p>
+    <img src="assets/images/recruitment-qr.png" alt="QR code for registration page" style="max-width: 220px; width: 100%; height: auto;" />
+
+    <!-- Comments -->
+    <h2 id="comments">Comments</h2>
+    <p>Share your thoughts or questions about the study.</p>
+    <div id="giscus-container" class="comment-card">
+      <script
+        src="https://giscus.app/client.js"
+        data-repo="YOUR_GITHUB_USERNAME/YOUR_REPO"
+        data-repo-id="YOUR_REPO_ID"
+        data-category="General"
+        data-category-id="YOUR_CATEGORY_ID"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+
+    <!-- Comment Analytics -->
+    <h2>Comment Analytics</h2>
+    <p>Hover over the buttons next to each comment to see quick insights.</p>
+    <div id="comment-analytics" class="comment-card">
+      <div class="comment-analytics-toolbar">
+        <span class="comment-analytics-label">Latest comments</span>
+        <span class="comment-analytics-meta">Powered by GitHub Discussions</span>
+      </div>
+      <div id="comment-analytics-list" class="comment-analytics-list"></div>
+    </div>
+
   </main>
 
 
@@ -324,15 +360,14 @@
 
   <footer>
 
-    <p>© 2025 Dartmouth HumanX Lab | Sudikoff, Hanover, NH 03755 | 
-
-      <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a>
+    <p>© 2025 Focus Tracking Study Team | Your Location |
+      <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>
 
     </p>
 
   </footer>
 
-
+  <script src="scripts/comment-analytics.js"></script>
 
 </body>
 

@@ -33,7 +33,7 @@ This guide will help you publish your recruitment website on GitHub Pages so you
 Open terminal and run:
 
 ```bash
-cd /Users/rajnishkumar/FRENZ_project_codes/recruitment_material/humanx-website
+cd /Users/rajnishkumar/FRENZ_project_codes/recruitment_material/humanx-website-2
 
 # Initialize git repository
 git init
@@ -94,6 +94,11 @@ git push -u origin main
 - Anyone with the link can view it
 - No login required
 
+### Option 2: Share a QR Code
+- Update `SITE_URL` in `generate_qrcode 2.py` with your GitHub Pages URL
+- Run the script to generate `humanx-website-2/assets/images/recruitment-qr.png`
+- The recruitment page will display the QR code automatically
+
 ### Option 2: Make Repository Collaborators
 - If repository is **Private**, invite specific people:
   - Repository → Settings → Collaborators → Add people
@@ -123,7 +128,7 @@ git push -u origin main
 After making changes:
 
 ```bash
-cd /Users/rajnishkumar/FRENZ_project_codes/recruitment_material/humanx-website
+cd /Users/rajnishkumar/FRENZ_project_codes/recruitment_material/humanx-website-2
 
 # Add changes
 git add .
@@ -204,7 +209,7 @@ If you want a custom domain later (e.g., `study.dartmouth.edu`):
 
 ```bash
 # Navigate to website folder
-cd /Users/rajnishkumar/FRENZ_project_codes/recruitment_material/humanx-website
+cd /Users/rajnishkumar/FRENZ_project_codes/recruitment_material/humanx-website-2
 
 # Check git status
 git status

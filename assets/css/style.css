@@ -10,7 +10,7 @@ body {
 
 /* Testing Disclaimer Banner - Change display: block to display: none to hide after IRB approval */
 .testing-banner {
-  display: block; /* Change to 'none' to hide after IRB approval */
+  display: none; /* Hidden after IRB approval */
   background-color: #ff6b6b;
   color: white;
   padding: 1rem;
@@ -85,6 +85,128 @@ footer {
   margin-top: 3rem;
 }
 
+/* Comment + Analytics */
+.comment-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.comment-analytics-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.comment-analytics-label {
+  font-weight: 600;
+  color: #111;
+}
+
+.comment-analytics-meta {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.comment-analytics-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.comment-item {
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.comment-author {
+  font-weight: 600;
+  color: #111;
+}
+
+.comment-date {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.comment-body {
+  margin-bottom: 0.75rem;
+  color: #111;
+}
+
+.comment-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.comment-action {
+  position: relative;
+}
+
+.comment-action-button {
+  border: 1px solid #cbd5f5;
+  background-color: #eef2ff;
+  color: #1f2937;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.comment-action-button:hover {
+  background-color: #e0e7ff;
+  border-color: #a5b4fc;
+}
+
+.comment-popup {
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  width: 240px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 5;
+}
+
+.comment-action:hover .comment-popup {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.comment-popup h4 {
+  margin: 0 0 0.4rem;
+  font-size: 0.9rem;
+  color: #111;
+}
+
+.comment-popup p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #374151;
+}
+
 /* Games Grid Styles */
 .games-grid {
   display: grid;
@@ -142,6 +264,73 @@ footer {
   margin: 1rem auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Question Section Styles */
+.game-card.locked {
+  opacity: 0.9;
+  position: relative;
+}
+
+.question-section {
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.question-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.option-btn {
+  padding: 0.75rem 1rem;
+  background-color: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.option-btn:hover {
+  background-color: #f3f4f6;
+  border-color: #004a37;
+}
+
+.option-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.option-btn.correct {
+  background-color: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+.option-btn.wrong {
+  background-color: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+}
+
+.question-feedback {
+  padding: 0.75rem;
+  border-radius: 6px;
+}
+
+.question-feedback.correct {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.question-feedback.wrong {
+  background-color: #f8d7da;
+  color: #721c24;
 }
 
 /* Responsive Design */
