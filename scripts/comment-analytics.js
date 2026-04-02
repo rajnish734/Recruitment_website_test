@@ -1,5 +1,5 @@
 (() => {
-  const COMMENTS_API_URL = "YOUR_COMMENTS_API_URL";
+  const COMMENTS_API_URL = "https://giscus-comments-proxy.rajnish734.workers.dev/comments";
 
   const FALLBACK_COMMENTS = [
     {
@@ -190,7 +190,7 @@
   };
 
   const loadComments = async () => {
-    if (!COMMENTS_API_URL || COMMENTS_API_URL.includes("YOUR_COMMENTS_API_URL")) {
+    if (!COMMENTS_API_URL || COMMENTS_API_URL.includes("https://giscus-comments-proxy.rajnish734.workers.dev/comments")) {
       renderComments(FALLBACK_COMMENTS);
       return;
     }
